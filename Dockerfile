@@ -5,4 +5,4 @@ RUN mvn -B clean package -DskipTests
 FROM openjdk:17-jdk-slim
 COPY --from=build ./target/*.jar password-gen.jar
 EXPOSE 8776
-ENTRYPOINT ["java","-jar","password-gen.jar"]
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=${PROFILE}","password-gen.jar"]
