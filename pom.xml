@@ -126,7 +126,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.password.gen</mainClass>
+							<mainClass>com.password.gen.PasswordGenApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
